@@ -2,7 +2,7 @@
 
 int proximo_id(void) {
     static int id = 0;
-    id++;
+    id = id + 1;
     return id;
 }
 

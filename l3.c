@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 int *cria_sequencia(int n) {
-    int *v, i;
+    int *v;
+    int i;
 
     v = malloc(n * sizeof(int));
     if (v == NULL) {
@@ -22,7 +23,7 @@ int main(void) {
 
     v = cria_sequencia(n);
     if (v == NULL) {
-        printf("Erro ao alocar memoria\n");
+        printf("Erro no malloc\n");
         return 1;
     }
 

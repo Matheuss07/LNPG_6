@@ -11,7 +11,7 @@ int main(void) {
 
     free(v);
 
-    // leitura depois do free, de proposito
+    // li depois do free de proposito
     printf("%d\n", v[2]);
 
     return 0;

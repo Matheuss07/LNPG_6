@@ -4,7 +4,7 @@ void aloca(void) {
     int *bloco = malloc(1000 * sizeof(int));
 
     bloco[0] = 1;
-    free(bloco);
+    free(bloco); // libera aqui pra nao vazar
 }
 
 int main(void) {

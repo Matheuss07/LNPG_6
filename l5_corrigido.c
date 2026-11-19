@@ -12,7 +12,7 @@ int main(void) {
     printf("%d\n", v[2]);
 
     free(v);
-    v = NULL;
+    v = NULL; // nao deixa ponteiro solto
 
     return 0;
 }

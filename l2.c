@@ -3,14 +3,15 @@
 
 int main(void) {
     int n, i;
-    double *notas, soma = 0.0;
+    double *notas;
+    double soma = 0.0;
 
     printf("Quantas notas? ");
     scanf("%d", &n);
 
     notas = malloc(n * sizeof(double));
     if (notas == NULL) {
-        printf("Erro ao alocar memoria\n");
+        printf("Erro no malloc\n");
         return 1;
     }
 
